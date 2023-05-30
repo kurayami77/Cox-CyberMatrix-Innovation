@@ -1,114 +1,162 @@
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: url('CCMI.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Startup</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-
-#h11 {
-  font-size: 3em;
-
-  border-bottom: 2px solid purple;
-  border-right: 2px purple;
-  width: 800px;
-  text-align: center;
-  box-shadow: 4px 4px 5px grey;
-  margin-top: 10px; 
-  font-family: monospace;
-  color: #FDD835; /* Yellow text color */
-}
-.navbar-dark .navbar-nav .nav-link {
-  background-color: grey; 
-  color: white !important;
-}
-
-hr {
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
  
-  margin: 20px auto;
-  color: #FDD835; /* Yellow color for the horizontal rule */
-  border: 3px solid #FDD835; /* Yellow color for the border */
-  max-width: 65px;
-  opacity: 1;  
-}
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-.buffer {
-  height: 10rem;
-}
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="styl1.css">
+  
+  <style>
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-text">
+  <div class="container-fluid">
+    <!-- Branding or logo section -->
+    <a class="navbar-brand" href="ccmi-white-transparent.png"></a>
 
-.btn {
-  color: black; 
-  font-weight: 700;
-  border-radius: 300px;
-  text-transform: uppercase;
-}
+    <!-- Navbar toggler button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-.btn-primary {  
-  background-color: #FDD835; /* Yellow background for the primary button */
-  border-color: #FDD835;   
-  --bs-btn-hover-bg: #FDD835; 
-  --bs-btn-hover-border-color: #FDD835;
-}
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar items container -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Home item -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
 
-.btn-primary:hover {
-  background-color: #FFEB3B; /* Lighter yellow background on hover */
-  border-color: #FFEB3B;
-  border-width: 4px;
-}
+        <!-- Link item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Web design & devolpment</a>
+        </li>
+        <!-- Link item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Genreal Programming</a>
+        </li>
+        <!-- Link item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photography</a>
+        </li>
+        <!-- Link item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Graphic Design</a>
+        </li>
+        <!-- Link item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
 
-.btn-xl {
-  padding: 1rem 2rem;
-}
+        <!-- Dropdown menu item -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu content -->
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
 
-/* Services section styles */
-#Services .container-fluid {
-  padding-top: 25px; /* Adds top padding to the container-fluid element */
-  color: #000000; /* Black text color for the Services section */
-  background-color: ghostwhite; /* White background color for the Services section */
-}
+        <!-- Disabled item -->
+        <li class="nav-item">
+          <a class="nav-link ">Disabled</a>
+        </li>
+      </ul>
 
-#h12 {
-  margin-left:auto; /*automatically evenly distrubites the l and r margins*/
-  margin-right:auto;
-  font-size: 3em;
-  border-bottom: 2px solid purple;
-  border-right: 2px purple;
-  width: 1000px;
-  text-align: center;
-  box-shadow: 5px 5px 5px black; /* Adjust the horizontal and vertical offsets as needed */
-  margin-top: 10px;
-  font-family: monospace;
-  color: #FDD835; /* Yellow text color */
-}
-#Services .container {
-  /* Styles for the container element */
-  max-width: 800px;
-  margin: 0 auto; /* Centers the container horizontally */
-}
+      <!-- Search form -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-#Services .text-center {
-  /* Styles for center-aligning the text */
-  text-align: center;
-}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <header class="text-center">
+          <h1 class="animate__animated animate__fadeInLeftBig" id=h11><strong>Cox CyberMatrix Innovations</strong></h1>
+        </header>
+        <div class="buffer"></div>
+        <section class="text-center">
+          <hr>
+          <a href="https://mailchi.mp/a3ce0d6e2801/cmi">
+            <button class="btn btn-primary btn-xl animate__animated animate__bounceInRight">Find out more</button>
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
 
-#Services .row {
-  /* Styles for the row element */
-  display: flex;
-  justify-content: center; /* Centers the row items horizontally */
-  margin-bottom: 75px; /* Adds bottom margin to the row element */
-}
+  <section id="Services">
 
-#Services .col {
-  /* Styles for the column elements */
-  padding: 10px;
-  background-color: #FFFFCC; /* Light yellow background for the column elements */
-  border: 1px solid #CCCC99; /* Light yellow border for the column elements */
-}
-footer {
-  padding: 2px;
-}
+    <div class="container-fluid">
+      <h2 class="text-center" style="margin-top: 15px" id=h12 ><strong>All you're digital needs in one place</strong></h1>
+      <div class="row justify-content-around" style="margin-top:50px;">
+        <div class="col-md-3">
+          <h3 class="text-center">Web design services</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">Advertising</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">Digital design</h3>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-3">
+          <h3 class="text-center">Photography</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">_</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">Social media</h3>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-3">
+          <h3 class="text-center">Programming</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">Cybersecurity</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">_</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 Cox CyberMatrix Innovations. All rights reserved. Created by Joshua Fiedler and Connor Cox</p>
+    </div>
+  </footer>
+</body>
+</html>
