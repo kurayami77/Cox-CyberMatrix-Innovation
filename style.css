@@ -25,7 +25,7 @@ body, html {
 }
 .navbar-dark .navbar-nav .nav-link {
   background-color: grey; 
-  color: white !important;
+  color: white;
 }
 
 hr {
