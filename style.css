@@ -9,11 +9,8 @@ body, html {
   background-size: cover;
 }
 
-
-
 #h11 {
   font-size: 3em;
-
   border-bottom: 2px solid purple;
   border-right: 2px purple;
   width: 800px;
@@ -23,13 +20,13 @@ body, html {
   font-family: monospace;
   color: #FDD835; /* Yellow text color */
 }
+
 .navbar-dark .navbar-nav .nav-link {
-  background-color: grey; 
-  color: white;
+  background-color: black; 
+  color: white !important;
 }
 
 hr {
- 
   margin: 20px auto;
   color: #FDD835; /* Yellow color for the horizontal rule */
   border: 3px solid #FDD835; /* Yellow color for the border */
@@ -65,6 +62,11 @@ hr {
   padding: 1rem 2rem;
 }
 
+.logo-img {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
 /* Services section styles */
 #Services .container-fluid {
   padding-top: 25px; /* Adds top padding to the container-fluid element */
@@ -73,8 +75,8 @@ hr {
 }
 
 #h12 {
-  margin-left:auto; /*automatically evenly distrubites the l and r margins*/
-  margin-right:auto;
+  margin-left: auto; /* Automatically evenly distributes the l and r margins */
+  margin-right: auto;
   font-size: 3em;
   border-bottom: 2px solid purple;
   border-right: 2px purple;
@@ -85,6 +87,7 @@ hr {
   font-family: monospace;
   color: #FDD835; /* Yellow text color */
 }
+
 #Services .container {
   /* Styles for the container element */
   max-width: 800px;
@@ -109,6 +112,7 @@ hr {
   background-color: #FFFFCC; /* Light yellow background for the column elements */
   border: 1px solid #CCCC99; /* Light yellow border for the column elements */
 }
+
 footer {
   padding: 2px;
 }
